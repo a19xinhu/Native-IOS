@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    //  \   { }    [ ]
+    @State var item : [String] = [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+    ]
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List{
+            Section(
+            header: Text("Item")){
+                ForEach(item, id: \.self){ item in
+                    Text(item.capitalized)
+                }
+                .onDelete(perform: deleteAll)
+            }
         }
-        .padding()
+    }
+    
+    func deleteAll(indexSet:IndexSet){
+        item.removeAll()
     }
 }
 
