@@ -9,32 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     //  \   { }    [ ]
-    @State var item : [String] = [
-        "One",
-        "Two",
-        "Three",
-        "Four"
+    @State var item : [ItemModel] = [
+        ItemModel(image:"rating-1"),
+        ItemModel(image:"rating-2"),
+        ItemModel(image:"rating-3"),
+        ItemModel(image:"rating-4"),
     ]
     
     var body: some View {
-        List{
-            Section(
-            header: Text("Item")){
-                ForEach(item, id: \.self){ item in
-                    Text(item.capitalized)
-                }
-                .onDelete(perform: deleteAll)
+        List
+        {
+            ForEach(item){item in
+                ListImageView(item:item)
             }
         }
+        .navigationTitle("Image")
     }
     
-    func deleteAll(indexSet:IndexSet){
-        item.removeAll()
-    }
+//            .onDelete(perform: deleteAll)
+//    func deleteAll(indexSet:IndexSet){
+//        item.removeAll()
+//    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        NavigationView{
+                ContentView()
+            }
     }
 }
+
+

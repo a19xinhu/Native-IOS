@@ -14,6 +14,8 @@
 		E0431B4E29EC6271008D38AD /* Native_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0431B4D29EC6271008D38AD /* Native_IOSTests.swift */; };
 		E0431B5829EC6271008D38AD /* Native_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0431B5729EC6271008D38AD /* Native_IOSUITests.swift */; };
 		E0431B5A29EC6271008D38AD /* Native_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0431B5929EC6271008D38AD /* Native_IOSUITestsLaunchTests.swift */; };
+		E0431B6729EEB192008D38AD /* ListImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0431B6629EEB192008D38AD /* ListImageView.swift */; };
+		E0431B6929EEBCFC008D38AD /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0431B6829EEBCFC008D38AD /* ItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		E0431B5329EC6271008D38AD /* Native-IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Native-IOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0431B5729EC6271008D38AD /* Native_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Native_IOSUITests.swift; sourceTree = "<group>"; };
 		E0431B5929EC6271008D38AD /* Native_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Native_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E0431B6629EEB192008D38AD /* ListImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListImageView.swift; sourceTree = "<group>"; };
+		E0431B6829EEBCFC008D38AD /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				E0431B3B29EC626C008D38AD /* Native_IOSApp.swift */,
 				E0431B3D29EC626C008D38AD /* ContentView.swift */,
+				E0431B6829EEBCFC008D38AD /* ItemModel.swift */,
+				E0431B6629EEB192008D38AD /* ListImageView.swift */,
 				E0431B3F29EC6271008D38AD /* Assets.xcassets */,
 				E0431B4129EC6271008D38AD /* Native_IOS.entitlements */,
 				E0431B4229EC6271008D38AD /* Preview Content */,
@@ -260,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0431B3E29EC626C008D38AD /* ContentView.swift in Sources */,
+				E0431B6729EEB192008D38AD /* ListImageView.swift in Sources */,
+				E0431B6929EEBCFC008D38AD /* ItemModel.swift in Sources */,
 				E0431B3C29EC626C008D38AD /* Native_IOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
