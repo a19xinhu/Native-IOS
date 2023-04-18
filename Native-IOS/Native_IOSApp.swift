@@ -9,11 +9,15 @@ import SwiftUI
 
 @main
 struct Native_IOSApp: App {
+    
+    @StateObject var listViewModel: ListViewModel = ListViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView{
                     ContentView()
-                }
+            }
+            .environmentObject(listViewModel)
         }
     }
 }
