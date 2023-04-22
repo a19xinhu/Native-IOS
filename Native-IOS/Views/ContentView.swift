@@ -12,7 +12,7 @@ struct ContentView: View {
     @EnvironmentObject var listViewModel: ListViewModel
     
     var body: some View {
-        List
+        List  //list includes image
         {
             ForEach(listViewModel.items){item in
                 ListImageView(item:item)

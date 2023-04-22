@@ -37,10 +37,10 @@ class ListViewModel: ObservableObject {
         let newItem = ItemModel(image: "rating-5")
         items.append(newItem)
     }
-    //add image function five haert 10 times
-    func addItem105(){
+    //add image function five haert 500 times
+    func addItem5005(){
         var i = 0;
-        while i<10{
+        while i<500{
             let newItem = ItemModel(image: "rating-5")
             items.append(newItem)
             i = i + 1

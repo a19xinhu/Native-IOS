@@ -40,9 +40,9 @@ struct AddView: View {
                    .cornerRadius(10)
                })
                 //button 10 times one heart
-                Button(action:savButtonPressed10fiveheart, label:
+                Button(action:savButtonPressed500fiveheart, label:
                {
-                   Text("Add 10 times five haert".uppercased())
+                   Text("Add 500 times five haert".uppercased())
                    .foregroundColor(.white)
                    .font(.headline)
                    .frame(height: 55)
@@ -66,8 +66,8 @@ struct AddView: View {
         presentationMode.wrappedValue.dismiss()
     }
     
-    func savButtonPressed10fiveheart(){
-        listViewModel.addItem105()
+    func savButtonPressed500fiveheart(){
+        listViewModel.addItem5005()
         presentationMode.wrappedValue.dismiss()
     }
 }
